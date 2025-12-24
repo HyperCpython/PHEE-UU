@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Upload Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1>User Upload Form</h1>
+
+    <form id="uploadForm" aria-label="User Upload Form">
+      
+      <label for="name">Name</label>
+      <input id="name" type="text" required aria-required="true"/>
+
+      <label for="file">Upload Files</label>
+      <input id="file" type="file" multiple required/>
+
+      <button type="submit">Submit</button>
+      <div id="loader" aria-live="polite">
+  Uploading...
+</div>
+
+      <p id="message" role="alert"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
